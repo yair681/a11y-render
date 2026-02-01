@@ -843,10 +843,9 @@ a::after {
                 <span>משפטי</span>
             </div>
             
-            <button id="${CONFIG.PREFIX}-declaration-btn" role="menuitem" aria-label="הצרת נגישות משפטית - לחץ לפתיחת חלון הצהרה מלא" tabindex="0">
+            <button id="${CONFIG.PREFIX}-declaration-btn" role="menuitem" aria-label="הצהרת נגישות ופרטיות - לחץ לפתיחת חלון הצהרה מלא" tabindex="0">
                 <span class="${CONFIG.PREFIX}-btn-icon" aria-hidden="true">⚖️</span>
-                <span>הצרת נגישות</span>
-            </button>
+                <span>הצהרת נגישות ופרטיות</span>
         </div>
 
         <div class="${CONFIG.PREFIX}-section" role="group">
@@ -861,107 +860,82 @@ a::after {
 <!-- כפתור דילוג לתוכן -->
 <a href="#main-content" class="${CONFIG.PREFIX}-skip-link" id="${CONFIG.PREFIX}-skip-link" tabindex="0">⬅️ דלג לתוכן הראשי</a>
 
-<!-- חלון הצרת נגישות מלא -->
+<!-- חלון הצהרת נגישות ופרטיות -->
 <div id="${CONFIG.PREFIX}-declaration-modal" class="${CONFIG.PREFIX}-modal" role="dialog" aria-labelledby="${CONFIG.PREFIX}-declaration-title" aria-modal="true" aria-hidden="true" style="display: none;">
     <div class="${CONFIG.PREFIX}-modal-overlay" role="presentation"></div>
     <div class="${CONFIG.PREFIX}-modal-content" tabindex="0">
         <button class="${CONFIG.PREFIX}-modal-close" id="${CONFIG.PREFIX}-declaration-close" aria-label="סגור הצהרה וחזור לדף" tabindex="0">✕</button>
         
         <h2 id="${CONFIG.PREFIX}-declaration-title" style="color: #667eea; font-size: 2rem; margin-bottom: 20px; text-align: center;">
-            📋 מידע על כלי הנגישות
+            📋 הצהרת נגישות ופרטיות
         </h2>
         
         <div class="${CONFIG.PREFIX}-declaration-content" style="padding: 20px;">
+
+            <!-- ===== הצהרת נגישות ===== -->
             <section style="margin-bottom: 30px;">
-                <h3 style="color: #764ba2; font-size: 1.4rem; margin-bottom: 15px;">🎯 מחויבות לנגישות</h3>
+                <h3 style="color: #764ba2; font-size: 1.4rem; margin-bottom: 15px;">♿ הצהרת נגישות</h3>
                 <p>
-                    אתר זה שואף לספק חווית גלישה נגישה לכל המשתמשים, לרבות אנשים עם מוגבלויות.
-                    אנו פועלים ברציפות כדי לשפר את הנגישות באתר.
+                    אתר זה שואף לספק חוויית גלישה נגישה לכלל המשתמשים, לרבות אנשים עם מוגבלויות.
+                    באתר הוטמע כלי נגישות המסייע בשיפור חוויית השימוש והנגישות.
                 </p>
             </section>
 
             <section style="margin-bottom: 30px;">
-                <h3 style="color: #764ba2; font-size: 1.4rem; margin-bottom: 15px;">🛠️ כלי נגישות</h3>
-                <p>האתר כולל כלי נגישות המסייעים בהתאמת חווית הגלישה:</p>
+                <h3 style="color: #764ba2; font-size: 1.4rem; margin-bottom: 15px;">🛠️ התאמות נגישות שבוצעו באתר</h3>
                 <ul style="margin-right: 20px; margin-top: 10px;">
-                    <li>תפריט נגישות עם אפשרויות התאמה אישית</li>
-                    <li>הגדלת/הקטנת טקסט</li>
-                    <li>שינוי ניגודיות וצבעים</li>
-                    <li>הקראת טקסט</li>
-                    <li>ניווט במקלדת</li>
+                    <li>תפריט נגישות מתקדם</li>
+                    <li>אפשרות לניווט באמצעות מקלדת</li>
+                    <li>שינוי גודל טקסט והתאמת קריאות</li>
+                    <li>מצבי ניגודיות גבוהה ושחור־לבן</li>
+                    <li>הקראת טקסט (קורא מסך)</li>
+                    <li>התאמות בסיסיות לשיפור חוויית המשתמש</li>
                 </ul>
-                <p style="margin-top: 15px; padding: 15px; background: #fff3cd; border-right: 4px solid #ffc107; border-radius: 8px;">
-                    <strong>⚠️ חשוב לדעת:</strong> כלי הנגישות באתר מסייעים בשיפור נגישות האתר, אך אינם מהווים תחליף לבדיקת נגישות מקצועית ולא מבטיחים עמידה מלאה בתקנים. 
-                    <strong>מומלץ מאוד לבצע בדיקת נגישות מקצועית</strong> על ידי מומחה נגישות מוסמך כדי לוודא עמידה מלאה בחוק ובתקנים.
+            </section>
+
+            <section style="margin-bottom: 30px;">
+                <h3 style="color: #764ba2; font-size: 1.4rem; margin-bottom: 15px;">⚠️ חשוב לדעת</h3>
+                <p style="padding: 15px; background: #fff3cd; border-right: 4px solid #ffc107; border-radius: 8px;">
+                    כלי הנגישות באתר נועד לסייע בשיפור הנגישות, ואינו מהווה תחליף לבדיקה מקצועית על ידי מומחה נגישות מוסמך.
+                    אין בהטמעת הכלי התחייבות לעמידה מלאה בדרישות החוק, או בתקן WCAG 2.1 / ת״י 5568.
+                </p>
+                <p style="margin-top: 12px; padding: 15px; background: #fee; border-right: 4px solid #f44; border-radius: 8px; color: #c00;">
+                    <strong>הלאחריות לעמידה בדרישות החוק חלה על בעל האתר.</strong>
                 </p>
             </section>
 
             <section style="margin-bottom: 30px;">
-                <h3 style="color: #764ba2; font-size: 1.4rem; margin-bottom: 15px;">🔧 תכונות זמינות</h3>
-                <ul style="margin-right: 20px; margin-top: 10px;">
-                    <li>תפריט נגישות מתקדם עם אפשרויות התאמה אישית</li>
-                    <li>הקראת טקסט בעברית</li>
-                    <li>שינוי גודל גופן (80%-200%)</li>
-                    <li>מצבי ניגודיות גבוהה ושחור-לבן</li>
-                    <li>הדגשת קישורים</li>
-                    <li>החלפה לגופן קריא</li>
-                    <li>עצירת אנימציות</li>
-                    <li>סמן עכבר מוגדל</li>
-                    <li>ניווט במקלדת מלא</li>
-                    <li>תמיכה בקוראי מסך</li>
-                </ul>
-            </section>
-
-            <section style="margin-bottom: 30px;">
-                <h3 style="color: #764ba2; font-size: 1.4rem; margin-bottom: 15px;">⌨️ קיצורי מקלדת</h3>
-                <ul style="margin-right: 20px; margin-top: 10px;">
-                    <li><strong>Alt + A</strong> - פתיחת תפריט נגישות</li>
-                    <li><strong>Alt + Plus (+)</strong> - הגדלת גופן</li>
-                    <li><strong>Alt + Minus (-)</strong> - הקטנת גופן</li>
-                    <li><strong>Alt + 0</strong> - איפוס הגדרות נגישות</li>
-                    <li><strong>Alt + S</strong> - הפעלת/כיבוי הקראת טקסט</li>
-                    <li><strong>Esc</strong> - סגירת תפריט נגישות</li>
-                    <li><strong>Tab</strong> - ניווט בין אלמנטים</li>
-                    <li><strong>Enter/Space</strong> - הפעלת כפתור או קישור</li>
-                </ul>
-            </section>
-
-            <section style="margin-bottom: 30px;">
-                <h3 style="color: #764ba2; font-size: 1.4rem; margin-bottom: 15px;">📋 המלצות</h3>
+                <h3 style="color: #764ba2; font-size: 1.4rem; margin-bottom: 15px;">📞 פניות בנושא נגישות</h3>
                 <p>
-                    <strong>לבעלי האתר:</strong> כלי הנגישות מסייע בשיפור הנגישות אך אינו מהווה תחליף לבדיקה מקצועית.
-                </p>
-                <ul style="margin-right: 20px; margin-top: 10px;">
-                    <li><strong>בדיקת נגישות מקצועית</strong> - מומלץ לבצע בדיקה על ידי מומחה נגישות מוסמך</li>
-                    <li><strong>תיקון בעיות בסיס</strong> - הוספת alt לתמונות, labels לטפסים, שימוש ב-HTML סמנטי</li>
-                    <li><strong>בדיקות אוטומטיות</strong> - שימוש בכלים כמו WAVE, axe DevTools</li>
-                    <li><strong>בדיקות ידניות</strong> - ניווט עם מקלדת בלבד וקורא מסך</li>
-                </ul>
-                <p style="margin-top: 15px; padding: 15px; background: #fee; border-right: 4px solid #f44; border-radius: 8px; color: #c00;">
-                    <strong>⚠️ חשוב:</strong> כלי זה אינו מבטיח עמידה בחוק הנגישות. אחריות עמידה בחוק היא של בעל האתר, ומומלץ להיוועץ עם מומחה נגישות ועורך דין מומחה.
+                    במידה ונתקלתם בבעיה בנושא נגישות, ניתן לפנות דרך טופס יצירת הקשר באתר.
                 </p>
             </section>
 
             <section style="margin-bottom: 30px;">
-                <h3 style="color: #764ba2; font-size: 1.4rem; margin-bottom: 15px;">📞 צור קשר</h3>
+                <h3 style="color: #764ba2; font-size: 1.4rem; margin-bottom: 15px;">🔄 תאריך עדכון</h3>
                 <p>
-                    נתקלת בבעיית נגישות או יש לך הצעה לשיפור? נשמח לשמוע ממך!
+                    הצהרה זו עודכנה לאחרונה בתאריך: <strong>${today}</strong>
+                </p>
+            </section>
+
+            <!-- ===== הצהרת פרטיות ===== -->
+            <hr style="border: none; border-top: 2px solid #e0e0e0; margin: 35px 0;">
+
+            <section style="margin-bottom: 30px;">
+                <h3 style="color: #764ba2; font-size: 1.4rem; margin-bottom: 15px;">🔐 הצהרת פרטיות</h3>
+                <p>
+                    האתר מכבד את פרטיות המשתמשים בו. המידע הנמסר באתר באמצעות טפסים
+                    (כגון שם, טלפון או כתובת דוא״ל) נמסר מרצון חופשי של המשתמש ומשמש אך ורק לצורך יצירת קשר ומתן מענה לפנייה.
                 </p>
                 <p style="margin-top: 10px;">
-                    ניתן ליצור קשר עם רכז הנגישות באתר דרך טופס יצירת הקשר או במייל.
-                </p>
-            </section>
-
-            <section style="margin-bottom: 30px;">
-                <h3 style="color: #764ba2; font-size: 1.4rem; margin-bottom: 15px;">🔄 עדכונים</h3>
-                <p>
-                    הצהרה זו עודכנה לאחרונה ב: <strong>${today}</strong>
+                    האתר אינו עושה שימוש במידע שנמסר לצרכים מסחריים אחרים ואינו מעביר מידע אישי לצד ג׳, למעט אם נדרש על פי חוק.
                 </p>
                 <p style="margin-top: 10px;">
-                    אנו ממשיכים לעבוד על שיפור הנגישות והחוויה באתר ומתחייבים לעדכן הצהרה זו בהתאם לשינויים.
+                    גלישה באתר והשארת פרטים מהווה הסכמה לאמור בהצהרה זו.
                 </p>
             </section>
 
+            <!-- ===== פותח על ידי ===== -->
             <section style="background: linear-gradient(135deg, #f0f9ff 0%, #e0f2fe 100%); padding: 20px; border-radius: 12px; border-right: 5px solid #667eea;">
                 <h3 style="color: #667eea; font-size: 1.2rem; margin-bottom: 10px;">💡 פותח על ידי</h3>
                 <p style="font-size: 1.1rem;">
